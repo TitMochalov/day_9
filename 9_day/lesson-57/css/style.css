@@ -1,0 +1,47 @@
+.wrapper {
+  position: relative;
+  background-color: rgb(121, 119, 121);
+  height: 100%;
+  width: 100%;
+}
+
+.conteiner {
+  position: absolute;
+  top: 100px;
+  left:40%;
+}
+
+.title__wrapper{
+  position: relative;
+}
+
+.title {
+display: inline-block;
+font-size: 60px;
+color: rgb(255, 255, 255);
+text-align: center;
+}
+
+.title__wrapper::before{
+  content: "";
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  background-color: blue;
+  border: 5px solid white;
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(-125px,-25px);
+}
+
+.title__wrapper::after {
+  content: "";
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  background-color: red;
+  border: 5px solid white;
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(25px, -20px)
+}
